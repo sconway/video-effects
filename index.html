@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Image</title>
+	    <style>
+        html,
+        body {
+          height: 100%;
+          width: 100%;
+          margin: 0;
+        }
+        .canvas {
+          position: absolute;
+          background-color: #c9c9c9;
+          height: 100%;
+          width: 100%;
+        }
+        video {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 100%;
+        }
+    </style>
+</head>
+<body>
+<!--   <canvas id="canvas" class="canvas" resize="true" height="100%" width="100%"></canvas>
+	<canvas id="canvasCopy" class="canvas" resize="true" height="100%" width="100%"></canvas>
+  <video id="sourceVid" autoplay="true" loop="true">
+      <source src="video.mp4" type="video/mp4"/>
+  </video> -->
+  <div class="canvas" style="display:none">
+    <video id="sourcevid" autoplay="true" loop="true">
+      <source src="piano.mp4" type="video/mp4"/>
+    </video>
+    <canvas class="canvas" id="sourcecopy" ></canvas>
+  </div>
+  <canvas class="canvas" id="output"  >
+
+<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="imageEffects.js"></script>
+</body>
+</html>
